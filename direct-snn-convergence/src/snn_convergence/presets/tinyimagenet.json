@@ -1,0 +1,21 @@
+{
+  "task": "tinyimagenet",
+  "status": "independent reference, not a certified reproduction of the paper table",
+  "model": {
+    "architecture": "sew_resnet34",
+    "classes": 200,
+    "steps": 4,
+    "width": 64,
+    "beta": 0.5
+  },
+  "training": {
+    "epochs": 120,
+    "batch_size": 32,
+    "learning_rate": 0.025,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "loss": "temporal_ce",
+    "scheduler": "cosine",
+    "weight_decay": 0.0
+  }
+}

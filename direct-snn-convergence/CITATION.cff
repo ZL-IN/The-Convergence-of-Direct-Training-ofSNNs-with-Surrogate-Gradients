@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "Please cite the paper when using these diagnostics; identify reference implementation version 1.0.0."
+type: software
+title: "Direct SNN Convergence: Independent Reference Implementation"
+version: 1.0.0
+date-released: 2026-11-04
+license: MIT
+authors:
+  - family-names: Wei
+    given-names: Zelin
+  - family-names: Man
+    given-names: Tianxing
+  - family-names: Shi
+    given-names: Wanli
+  - family-names: Gu
+    given-names: Bin
+url: "https://openreview.net/forum?id=QNkfQ8wsii"
+preferred-citation:
+  type: conference-paper
+  title: "Understanding the Convergence of Direct Training of SNNs with Surrogate Gradients"
+  authors:
+    - family-names: Wei
+      given-names: Zelin
+    - family-names: Man
+      given-names: Tianxing
+    - family-names: Shi
+      given-names: Wanli
+    - family-names: Gu
+      given-names: Bin
+  year: 2026
+  conference:
+    name: "NeurIPS 2026"
+  url: "https://openreview.net/forum?id=QNkfQ8wsii"

@@ -1,0 +1,23 @@
+{
+  "task": "shd",
+  "status": "independent reference, not a certified reproduction of the paper table",
+  "model": {
+    "architecture": "shd_mlp",
+    "classes": 20,
+    "steps": 100,
+    "width": 128,
+    "beta": 0.5
+  },
+  "training": {
+    "epochs": 100,
+    "batch_size": 128,
+    "learning_rate": 0.01,
+    "optimizer": "adam",
+    "momentum": 0.0,
+    "loss": "ce",
+    "scheduler": "step",
+    "weight_decay": 0.0,
+    "step_size": 20,
+    "gamma": 0.5
+  }
+}

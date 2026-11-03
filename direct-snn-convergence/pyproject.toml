@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "direct-snn-convergence"
+version = "1.0.0"
+description = "Independent PyTorch reference implementation of direct SNN convergence diagnostics"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = "MIT"
+authors = [{name = "Zelin Wei, Tianxing Man, Wanli Shi, and Bin Gu"}]
+dependencies = ["torch>=2.7,<2.8", "numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+data = ["torchvision>=0.22,<0.23", "h5py>=3.10,<4"]
+events = ["spikingjelly==0.0.0.0.14", "torchvision>=0.22,<0.23"]
+plots = ["matplotlib>=3.8,<4"]
+dev = ["pytest>=8,<10", "ruff>=0.11", "build>=1.2"]
+
+[project.scripts]
+snn-convergence = "snn_convergence.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+snn_convergence = ["presets/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F"]

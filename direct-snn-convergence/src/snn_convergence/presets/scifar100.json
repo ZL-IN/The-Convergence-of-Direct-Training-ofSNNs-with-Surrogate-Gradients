@@ -1,0 +1,21 @@
+{
+  "task": "scifar100",
+  "status": "independent reference, not a certified reproduction of the paper table",
+  "model": {
+    "architecture": "scnn",
+    "classes": 100,
+    "steps": 32,
+    "width": 128,
+    "beta": 0.5
+  },
+  "training": {
+    "epochs": 300,
+    "batch_size": 128,
+    "learning_rate": 0.1,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "loss": "ce",
+    "scheduler": "cosine",
+    "weight_decay": 0.0
+  }
+}

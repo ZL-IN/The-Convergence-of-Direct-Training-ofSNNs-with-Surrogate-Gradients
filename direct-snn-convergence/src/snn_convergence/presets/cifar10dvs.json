@@ -1,0 +1,21 @@
+{
+  "task": "cifar10dvs",
+  "status": "independent reference, not a certified reproduction of the paper table",
+  "model": {
+    "architecture": "spiking_vgg",
+    "classes": 10,
+    "steps": 10,
+    "width": 64,
+    "beta": 0.25
+  },
+  "training": {
+    "epochs": 100,
+    "batch_size": 32,
+    "learning_rate": 0.1,
+    "optimizer": "sgd",
+    "momentum": 0.9,
+    "loss": "temporal_ce",
+    "scheduler": "cosine",
+    "weight_decay": 0.0005
+  }
+}
