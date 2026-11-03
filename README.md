@@ -1,7 +1,5 @@
 # Understanding the Convergence of Direct Training ofSNNs with Surrogate Gradients
 
-# Direct SNN Convergence
-
 Independent PyTorch reference implementation for **Understanding the Convergence of Direct
 Training of SNNs with Surrogate Gradients** (NeurIPS 2026).
 
